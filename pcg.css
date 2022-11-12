@@ -3,10 +3,12 @@
     color: #2a6d7e    
 }
 
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 25%;
+    position: fixed;
   }
 
 h1{
@@ -17,6 +19,11 @@ h1{
 h2{
     text-align: center;
     font-size: 35px;
+}
+
+.header{
+  background-color: rgb(34, 63, 63);
+  color:rgb(24, 24, 153);
 }
 
   .flex-container {
@@ -31,7 +38,43 @@ h2{
     padding: 20px;
     font-size: 30px;
   }
+  .row{
+    display: -webkit-flex;
+    display:flex;
+  }
 
+  .column {
+    padding: 5;
+  }
+
+  .column.side {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+
+  .column.main {
+    -webkit-flex:2;
+    flex:2;
+  }
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
   /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
     .flex-container {
