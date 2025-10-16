@@ -7,7 +7,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 10%;
     position: fixed;
   }
 
@@ -57,23 +57,23 @@ h2{
     flex:2;
   }
   div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   
   div.gallery:hover {
     border: 1px solid #777;
   }
   
-  div.gallery img {
-    width: 100%;
+  
+  div.gallery-item img{
+    width: 50%;
     height: auto;
   }
-  div.desc {
-    padding: 15px;
-    text-align: center;
+  div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
   }
   /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
