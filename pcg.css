@@ -53,7 +53,6 @@ h2{
   }
 
   .column.main {
-    -webkit-flex:2;
     flex:2;
   }
   div.gallery {
@@ -76,7 +75,7 @@ h2{
   text-align: center;
   }
   /* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .flex-container {
       flex-direction: column;
     }
